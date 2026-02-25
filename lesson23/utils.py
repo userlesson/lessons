@@ -1,12 +1,12 @@
 from random import randint as rand
 
-def randbool(r, intrand):
-    t = rand(0, intrand)
+def randbool(r, mxr):
+    t = rand(0, mxr)
     return (t <= r)
 
-def randcell(height, width):
-    tw = rand(0, width)
-    th = rand(0, height)
+def randcell(w, h):
+    tw = rand(0, w - 1)
+    th = rand(0, h - 1)
     return (th, tw)
 
 def randcell2(x, y, w, h):
